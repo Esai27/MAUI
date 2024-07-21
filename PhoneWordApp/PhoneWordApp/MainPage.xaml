@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhoneWordApp.MainPage"
+             BackgroundColor="Aqua">
+
+    <VerticalStackLayout Padding="5" Spacing="10">
+        <Label Text="Enter Phone Word"
+               FontSize="16"/>
+        <Entry x:Name="phoneWordEntry"
+               Placeholder="Enter your phone word"
+               PlaceholderColor="Chocolate"/>
+        <Button Text="Translate"
+                x:Name="transalteButton"
+                Clicked="transalteButton_Clicked"
+                BackgroundColor="Brown"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="20"/>
+        <Button Text="Call"
+                x:Name="callButton"
+                IsEnabled="False"
+                Clicked="callButton_Clicked"
+                BackgroundColor="Brown" 
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="20"/>
+    </VerticalStackLayout>
+</ContentPage>
