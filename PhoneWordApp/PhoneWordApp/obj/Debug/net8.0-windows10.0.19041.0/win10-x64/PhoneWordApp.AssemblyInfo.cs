@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoneWordApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+177a4ea70b88951aa27210fbaba631774f3d06c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoneWordApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoneWordApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
