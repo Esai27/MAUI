@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:notes="clr-namespace:MakeNotes"
+             x:Class="MakeNotes.MainPage">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Label Text=" Notes" FontSize="Header" TextColor="{x:Static Member=notes:SharedResources.fontColor}" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Editor 
+            x:Name="editorText" Placeholder="Enter your Note here ..." HeightRequest="100" TextColor="{x:Static Member=notes:SharedResources.fontColor}"/>
+
+        <Grid ColumnDefinitions="Auto,30,Auto">
+            <Button Grid.Column="0"
+                   Text="Save"
+                   TextColor="{x:Static Member=notes:SharedResources.fontColor}"
+                   BackgroundColor="{x:Static Member=notes:SharedResources.backgroundColor}"
+                   Clicked="Save_Button_Clicked"
+                   CornerRadius="20"
+                   WidthRequest="100"/>
+            <Button Grid.Column="2"
+                   Text="Delete"
+                   TextColor="{x:Static Member=notes:SharedResources.fontColor}"
+                   BackgroundColor="{x:Static Member=notes:SharedResources.backgroundColor}"
+                   Clicked="Delete_Button_Clicked"
+                   CornerRadius="20"
+                   WidthRequest="100"/>     
+        </Grid>
+    </VerticalStackLayout>
+        
+</ContentPage>
